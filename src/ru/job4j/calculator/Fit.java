@@ -17,5 +17,4 @@ public class Fit {
         double woman = Fit.womanWeight(height2);
         System.out.println("Woman 150 sm is " + woman + "kg");
     }
-
 }
