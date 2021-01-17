@@ -25,4 +25,9 @@ public class MultiMaxTest {
         int result = MultiMax.max(6, 6, 6);
         assertThat(result, is(6));
     }
+    @Test
+    public void whenOneMax() {
+        int result = MultiMax.max(1, 100, 100);
+        assertThat(result, is(100));
+    }
 }
