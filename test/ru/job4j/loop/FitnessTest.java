@@ -27,7 +27,7 @@ public class FitnessTest {
 
     @Test
     public void whenIvanGreatByOneNik2() {
-        int month = Fitness.calc(90, 200);
-        assertThat(month, is(2));
+        int month = Fitness.calc(90, 90);
+        assertThat(month, is(1));
     }
 }
