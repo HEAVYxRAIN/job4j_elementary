@@ -3,13 +3,12 @@ package ru.job4j.array;
 public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
-            int point = index;
-            if (array[point] == null) {
-                for (point = index + 1; point < array.length; point++) {
-                    if (array[point] != null) {
+            if (array[index] == null) {
+                for (int i = index + 1; i < array.length; i++) {
+                    if (array[i] != null) {
                         String temp = array[index];
-                        array[index] = array[point];
-                        array[point] = temp;
+                        array[index] = array[i];
+                        array[i] = temp;
                         break;
                     }
                 }
